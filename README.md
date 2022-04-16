@@ -11,7 +11,7 @@ yarn add react react-hooks-geolocation
 ```
 
 # Usage
-```
+```js
 import useGeolocation from "react-hooks-geolocation";
 
   const {location,loading,metaInfo, activate, update, watch, unwatch} = useGeolocation({defaultActive: false, (loc, meta) => {console.log(loc, meta)});
@@ -46,7 +46,7 @@ import useGeolocation from "react-hooks-geolocation";
 ```
 
 Type
-```
+```ts
 
 export type Location = {
   latitude: number;
