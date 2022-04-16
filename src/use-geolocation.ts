@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
-import {Args, Err, ErrType, MetaInfo, GeolocationPosition, GeolocationPositionError, Location} from "./types"
+import {
+  Args,
+  Err,
+  ErrType,
+  MetaInfo,
+  GeolocationPosition,
+  GeolocationPositionError,
+  Location,
+} from './types';
 
 export default ({
   geolocation = navigator.geolocation,

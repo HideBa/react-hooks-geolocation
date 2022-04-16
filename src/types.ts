@@ -4,7 +4,7 @@ export type GeolocationPositionError = {
   readonly PERMISSION_DENIED: number;
   readonly POSITION_UNAVAILABLE: number;
   readonly TIMEOUT: number;
-}
+};
 
 type GeolocationCoordinates = {
   readonly accuracy: number;
@@ -14,15 +14,14 @@ type GeolocationCoordinates = {
   readonly latitude: number;
   readonly longitude: number;
   readonly speed: number | null;
-}
+};
 
 type EpochTimeStamp = number;
-
 
 export type GeolocationPosition = {
   readonly coords: GeolocationCoordinates;
   readonly timestamp: EpochTimeStamp;
-}
+};
 
 export type Location = {
   latitude: number;
@@ -36,7 +35,6 @@ export type MetaInfo = {
   heading: number | null;
   speed: number | null;
 };
-
 
 export type ErrType =
   | 'PERMISSION_DENIED'
