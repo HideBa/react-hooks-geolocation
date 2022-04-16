@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "use-geolocation",
+  "name": "react-hooks-geolocation",
   "author": "HideBa",
   "module": "dist/.esm.js",
   "size-limit": [

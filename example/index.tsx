@@ -4,7 +4,7 @@ import { useGeolocation } from "../src"
 import  { Box, Button, ChakraProvider, Flex, Spinner, Table, TableContainer, Tbody, Th, Thead, Tr, VStack } from "@chakra-ui/react"
 
 const App = () => {
-  const {location,loading,metaInfo, activate, update, watch, unwatch} = useGeolocation({defaultActive: false});
+  const {location,loading,metaInfo, activate, update, watch, unwatch} = useGeolocation({defaultActive: false, onGeolocationChange: (loc, meta) => {console.log(loc, meta)}});
   return (
     <ChakraProvider>
       <Box m="10">
