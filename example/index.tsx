@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useGeolocation } from "../src"
-import  { Box, Button, ChakraProvider, Flex, HStack, Spinner, Table, TableCaption, TableContainer, TabPanel, Tbody, Th, Thead, Tr, VStack } from "@chakra-ui/react"
+import  { Box, Button, ChakraProvider, Flex, Spinner, Table, TableContainer, Tbody, Th, Thead, Tr, VStack } from "@chakra-ui/react"
 
 const App = () => {
   const {location,loading,metaInfo, activate, update, watch, unwatch} = useGeolocation({defaultActive: false});

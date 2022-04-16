@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "",
+  "name": "use-geolocation",
   "author": "HideBa",
   "module": "dist/.esm.js",
   "size-limit": [
