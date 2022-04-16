@@ -1,1 +1,1 @@
-export { default as useGeolocation } from './use-geolocation';
+export { default } from './use-geolocation';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { useGeolocation } from "../src"
+import useGeolocation from "../src"
 import  { Box, Button, ChakraProvider, Flex, Spinner, Table, TableContainer, Tbody, Th, Thead, Tr, VStack } from "@chakra-ui/react"
 
 const App = () => {
@@ -53,6 +53,7 @@ const App = () => {
       </Box>
     </ChakraProvider>
   );
+  // return(<div>hello</div>)
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
