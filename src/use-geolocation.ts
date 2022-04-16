@@ -1,34 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-
-export type Location = {
-  latitude: number;
-  longitude: number;
-  altitude: number | null;
-};
-
-type MetaInfo = {
-  altitudeAccuracy: number | null;
-  accuracy: number | null;
-  heading: number | null;
-  speed: number | null;
-};
-
-type ErrType =
-  | 'PERMISSION_DENIED'
-  | 'POSITION_UNAVAILABLE'
-  | 'TIMEOUT'
-  | 'OTHER';
-
-type Err = {
-  type: ErrType;
-  message: string;
-};
-
-type Args = {
-  defaultActive?: boolean;
-  onGeolocationChange?: (location?: Location, metaInfo?: MetaInfo) => void;
-  geolocation?: Geolocation;
-};
+import {Args, Err, ErrType, MetaInfo, GeolocationPosition, GeolocationPositionError, Location} from "./types"
 
 export default ({
   geolocation = navigator.geolocation,
@@ -43,7 +14,6 @@ export default ({
 
   let watchId: number | undefined = undefined;
 
-  //Fetch geolocation via geolocation API
   useEffect(() => {
     if (!isActive) return;
     update();
